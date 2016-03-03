@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="intro">
+    <div class="header">
+      <h1 class="pull-xs-left">Coworking Night #{{ night_id }}</h1>
+      <h2 class="pull-xs-left pull-sm-right">{{ date | date: 'MMM d, yyyy' }} •  AL.com  •  6-11pm </h2>
+      <div class="clearfix"></div>
+      <span>If you’ve come to GSD (Get Sh*t Done), then you’ve come to the right place! Attend our events, or invite your team and collaborate, or grab a booth and work solo. Coworking Night is a FREE resource in Huntsville designed to get the minds and talent of our city into motion: learning, creating, and executing ideas into reality.</span>
+    </div>
+
+  	<img class="header-flourish" src="img/header-flourish.png"/>
+      <div class="cover-image">
+  	</div>
+
+  	<div class="row row-margin-sm organizer-row">
+      <img class="openhsv-credit col-xs-5" src="img/organized-by-open-huntsville.png" alt="Organized by Open Huntsville" />
+      <p class="col-xs-7 pull-xs-right text-right organizer-memo">Create your <strong>FREE</strong> Open Huntsville profile: <strong><a href="http://www.openhsv.com">www.openhsv.com</a></strong></p>
+	  </div>
+  </div>
+
+  <div class="row list-events">
+    <div class="col-sm-6">
+      <div ng-repeat="event in left" class="event">
+        <div event-detail></div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div ng-repeat="event in right" class="event">
+        <div event-detail></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="row row-margin-xs hidden-xs-down">
+      <div class="col-sm-1-5">
+        <img src="img/footer-photo-1.jpg" alt="coworking night candid"/>
+      </div>
+        <div class="col-sm-1-5">
+        <img src="img/footer-photo-2.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="img/footer-photo-3.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="img/footer-photo-4.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="img/footer-photo-5.jpg" alt="coworking night candid"/>
+      </div>
+    </div>
+    <div class="footnote text-center">
+      <span>A <strong>big thanks</strong> to AL.com and Wild Bean Coffee for supporting Coworking Night!</span>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,7 @@
+<div class="container-fluid">
+<ul>
+    <li ng-repeat="event in events">
+        <a href="#/flyer/{{ event.id }}/{{ event.date.toISOString() }}">Coworking Night #{{event.id}} - {{ event.date | date: 'MMM d, yyyy'}}</a>
+        </li>
+</ul>
+</div>

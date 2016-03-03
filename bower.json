@@ -1,0 +1,19 @@
+{
+    "name": "coworking-flyer",
+    "version": "0.0.0",
+    "authors": [
+        "Michael Carroll <m@auburn.edu>",
+        "Drew McDowell"
+        ],
+    "description": "Coworking Flyer",
+    "private": true,
+    "dependencies": {
+        "angular": "1.4.x",
+        "angular-mocks": "1.4.x",
+        "angular-loader": "1.4.x",
+        "angular-route": "1.4.x",
+        "angular-facebook": "0.2.3",
+        "jquery": "~2.1.1",
+        "bootstrap": "~4.0.0"
+    }
+}
