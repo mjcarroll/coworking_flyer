@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <h2>Event Linter</h2>
+    <h3>Rules for Creating Coworking Night Facebook Events</h3>
+    <ul>
+        <li>Title: as brief as possible - flyer will be truncated after ~44 characters</li>
+        <li>Location: "AL.com building - [room]" (Example: AL.com building - Big Spring Room</li>
+        <li>Time: Include start time and end time</li>
+        <li>Description: Begin with one paragraph that is 140 characters or less.  Include remaining description in subsequent paragraphs.</li>
+    </ul>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="event in results">
+            <td>{{ event.name }}</td>
+            <td><span class="label" ng-class="{true:'label-success', false:'label-danger'}[event.check.title == 'Pass']">{{ event.check.title }}</span></td>
+            <td><span class="label" ng-class="{true:'label-success', false:'label-danger'}[event.check.description == 'Pass']">{{ event.check.description }}</span></td>
+            <td><span class="label" ng-class="{true:'label-success', false:'label-danger'}[event.check.start == 'Pass']">{{ event.check.start }}</span></td>
+            <td><span class="label" ng-class="{true:'label-success', false:'label-danger'}[event.check.end == 'Pass']">{{ event.check.end }}</span></td>
+        </tr>
+    </table>
+</div>

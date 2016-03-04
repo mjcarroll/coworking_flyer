@@ -6,4 +6,4 @@
     <strong>{{event.start_time | date : 'h:mm a'}}-{{ event.end_time | date: 'h:mm a'}}</strong>
     <span class="divider">//</span> {{event.place.name}}
 </h5>
-<p class="event-description">{{event.description | limitTo: 300}}</p>
+<p class="event-description">{{event.short_desc | limitTo: 300}}</p>

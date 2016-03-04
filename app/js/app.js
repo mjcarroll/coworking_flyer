@@ -22,6 +22,10 @@ flyerApp.config([
                 templateUrl: 'partials/flyer.html',
                 controller: 'FlyerDetailCtrl'
             }).
+            when('/lint', {
+                templateUrl: "partials/lint.html",
+                controller: 'EventLintCtrl'
+            }).
             otherwise({
                 redirectTo: '/flyers'
             });

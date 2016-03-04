@@ -1,7 +1,23 @@
 <div class="container-fluid">
+<h2>Next Event</h2>
 <ul>
-    <li ng-repeat="event in events">
-        <a href="#/flyer/{{ event.id }}/{{ event.date.toISOString() }}">Coworking Night #{{event.id}} - {{ event.date | date: 'MMM d, yyyy'}}</a>
-        </li>
+    <li>
+        <a href="#/flyer/{{ next_event.id }}/{{ next_event.date.toISOString() }}">Coworking Night #{{next_event.id}} - {{ next_event.date | date: 'MMM d, yyyy'}}</a>
+    </li>
 </ul>
+
+<h2>Future Events</h2>
+<ul>
+    <li ng-repeat="event in upcoming">
+        <a href="#/flyer/{{ event.id }}/{{ event.date.toISOString() }}">Coworking Night #{{event.id}} - {{ event.date | date: 'MMM d, yyyy'}}</a>
+    </li>
+</ul>
+
+<h2>Past Events</h2>
+<ul>
+    <li ng-repeat="event in past">
+        <a href="#/flyer/{{ event.id }}/{{ event.date.toISOString() }}">Coworking Night #{{event.id}} - {{ event.date | date: 'MMM d, yyyy'}}</a>
+    </li>
+</ul>
+
 </div>
