@@ -18,7 +18,7 @@ flyerApp.config([
                 templateUrl: 'partials/flyer-list.html',
                 controller: 'FlyerListCtrl'
             }).
-            when('/flyer/:id/:date', {
+            when('/flyer/:id', {
                 templateUrl: 'partials/flyer.html',
                 controller: 'FlyerDetailCtrl'
             }).

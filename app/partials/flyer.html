@@ -15,42 +15,85 @@
       <img class="openhsv-credit col-xs-5" src="img/organized-by-open-huntsville.png" alt="Organized by Open Huntsville" />
       <p class="col-xs-7 pull-xs-right text-right organizer-memo">Create your <strong>FREE</strong> Open Huntsville profile: <strong><a href="http://www.openhsv.com">www.openhsv.com</a></strong></p>
 	  </div>
+	</div>
+
+  <div ng-if="!userIsConnected" class="msg-login">
+    <p>Facebook won't let us show you the events until you log in.</p>
+    <button type="button" class="btn btn-lg btn-primary mb-lg" ng-click="IntentLogin()">
+      <i class="icon icon-facebook"></i>
+      <span>Login with Facebook</span>
+    </button>
   </div>
 
-  <div class="row list-events">
-    <div class="col-sm-6">
-      <div ng-repeat="event in left" class="event">
-        <div event-detail></div>
+  <div ng-if="userIsConnected">
+    <div class="row list-events">
+      <div class="col-sm-6">
+        <div ng-repeat="event in left" class="event">
+          <div event-detail></div>
+        </div>
       </div>
-    </div>
 
-    <div class="col-sm-6">
-      <div ng-repeat="event in right" class="event">
-        <div event-detail></div>
+      <div class="col-sm-6">
+        <div ng-repeat="event in right" class="event">
+          <div event-detail></div>
+        </div>
       </div>
     </div>
   </div>
 
   <footer class="footer">
-    <div class="row row-margin-xs hidden-xs-down">
+    <div class="row row-margin-xs hidden-xs-down row-photofooter">
       <div class="col-sm-1-5">
-        <img src="img/footer-photo-1.jpg" alt="coworking night candid"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-1.jpg" alt="coworking night candid"/>
       </div>
         <div class="col-sm-1-5">
-        <img src="img/footer-photo-2.jpg" alt="coworking night candid"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-2.jpg" alt="coworking night candid"/>
       </div>
       <div class="col-sm-1-5">
-        <img src="img/footer-photo-3.jpg" alt="coworking night candid"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-3.jpg" alt="coworking night candid"/>
       </div>
       <div class="col-sm-1-5">
-        <img src="img/footer-photo-4.jpg" alt="coworking night candid"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-4.jpg" alt="coworking night candid"/>
       </div>
       <div class="col-sm-1-5">
-        <img src="img/footer-photo-5.jpg" alt="coworking night candid"/>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-5.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-6.jpg" alt="coworking night candid"/>
+      </div>
+        <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-7.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-8.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-9.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-10.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-1.jpg" alt="coworking night candid"/>
+      </div>
+        <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-2.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-3.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-4.jpg" alt="coworking night candid"/>
+      </div>
+      <div class="col-sm-1-5">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/69546/footer-photo-5.jpg" alt="coworking night candid"/>
       </div>
     </div>
+
+
     <div class="footnote text-center">
       <span>A <strong>big thanks</strong> to AL.com and Wild Bean Coffee for supporting Coworking Night!</span>
     </div>
   </footer>
+
 </div>

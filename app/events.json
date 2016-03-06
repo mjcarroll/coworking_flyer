@@ -1,4 +1,81 @@
 {
+    "venues": [
+        {
+            "match": "Apollo",
+            "full": "Apollo Room",
+            "floor": 1,
+            "map_id": 1,
+            "type": "Conference",
+            "capacity": 9
+        },
+        {
+            "match": "John Hunt",
+            "full": "John Hunt Room",
+            "floor": 1,
+            "map_id": 2,
+            "type": "Conference",
+            "capacity": 5
+        },
+        {
+            "match": "Limestone",
+            "full": "Limestone Room",
+            "floor": 2,
+            "map_id": 3,
+            "type": "Enclave",
+            "capacity": 2
+        },
+        {
+            "match": "Madison",
+            "full": "Madison Room",
+            "floor": 2,
+            "map_id": 4,
+            "type": "Enclave",
+            "capacity": 2
+        },
+        {
+            "match": "Monte Sano",
+            "full": "Monte Sano Room",
+            "floor": 1,
+            "map_id": 5,
+            "type": "Wellness",
+            "capacity": 2
+        },
+        {
+            "match": "Redstone",
+            "full": "Redstone Room",
+            "floor": 2,
+            "type": "Conference",
+            "capacity": 5
+        },
+        {
+            "match": "Saturn V",
+            "full": "Saturn V Room",
+            "floor": 2,
+            "type": "Conference",
+            "capacity": 5
+        },
+        {
+            "match": "Big Spring",
+            "full": "Big Spring Room",
+            "floor": 2,
+            "type": "Conference",
+            "capacity": 14
+        },
+        {
+            "match": "Rear Pitch",
+            "full": "Rear Pitch Area",
+            "floor": 1,
+            "type": "Open Area",
+            "capacity": 25
+        },
+        {
+            "match": "Vault",
+            "full": "Vault Room",
+            "floor": 2,
+            "type": "Conference",
+            "capacity": 8
+        }
+    ],
     "events": [
         { "date": "February 24, 2016",  "id": 44 },
         { "date": "March 2, 2016",      "id": 45 },
